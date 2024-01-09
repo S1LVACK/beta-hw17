@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.own-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fon.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    .menu{
+        
+        color: white;
+        width: 90%;
+        height: 84px;
+        border-bottom-right-radius: 20px ;
+        background: rgba(255,255,255,.05);
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        backdrop-filter: blur(7px);
+        display: flex;
+        align-items: center;
+        #logo{
+            width: 200px;
+            height: 150px;
+            transition: 1s;
+        }
+        #logo:hover{
+            transition: 0.80s;
+            filter: 
+            drop-shadow(3px 3px 40px white);
+            user-select: none;
+        }
+        .line{
+            width: 2px;
+            height: 40px;
+            background-color: white;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        #about-download{
+            font-size: 20px;
+            transition: .5s;
+            margin-right: 20px;
+        }
+        #about-download:hover{
+            box-shadow: -1px 3px 1px white;
+            transition: 0.80s;
+            padding-bottom: 5px;
+        }
+
+        .paste-button {
+            position: relative;
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+          }
+          
+          .button {
+           
+            color: white;
+
+            background: rgba(255,255,255,.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+            backdrop-filter: blur(7px);
+          
+            padding: 10px 15px;
+            transition: .1s;
+            font-size: 15px;
+            font-weight: bold;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            cursor: pointer;
+          }
+          
+          .dropdown-content {
+            display: none;
+            font-size: 13px;
+            position: absolute;
+            z-index: 1;
+            min-width: 200px;
+           
+            background: rgba(255,255,255,.05);
+        
+            border-radius: 0px 15px 15px 15px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          }
+          
+          .dropdown-content a {
+            color: white;
+            padding: 8px 10px;
+            text-decoration: none;
+            display: block;
+            transition: 0.1s;
+            
+          }
+          
+          .dropdown-content a:hover {
+            
+            background-color: rgba(101, 159, 216, 0.633);
+            color: white;
+            transition: 1s;
+          }
+          
+          
+          .dropdown-content a:focus {
+            background-color: #2121219c;
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+            backdrop-filter: blur(7px);
+            color: white;
+            transition: 0.80s;
+            
+          }
+          
+          .dropdown-content #top:hover {
+            border-radius: 0px 13px 0px 0px;
+          }
+          
+          .dropdown-content #bottom:hover {
+            border-radius: 0px 0px 13px 13px;
+          }
+          
+          .paste-button:hover button {
+            border-radius: 15px 15px 0px 0px;
+          }
+          
+          .paste-button:hover .dropdown-content {
+            display: block;
+          }
+
+        //   
+        input[placeholder], [placeholder], *[placeholder] {
+            color: rgb(255, 255, 255) !important;
+        }
+        .input {
+            
+            color: white;
+            margin-left: 330px;
+            max-width: 190px;
+            background: rgba(255,255,255,.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+            backdrop-filter: blur(7px);
+        
+            padding: .15rem .5rem;
+            min-height: 40px;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            line-height: 1.15;
+            box-shadow: 0px 10px 20px -18px;
+            transition: .5s;
+          }
+          
+          input:focus {
+            border-bottom: 2px solid #5b5fc7;
+            border-radius: 4px 4px 2px 2px;
+          }
+          
+          input:hover {
+            outline: 1px solid rgba(211, 211, 211, 0.466);
+          }
+          
+
+    }
+    .div-okno{
+        color: white;
+        width: 900px;
+        display: flex;
+        height: 500px;
+        border-radius: 15px;
+        margin-top: 90px;
+        margin-left: 60px;
+        background: rgba(255,255,255,.05);
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        backdrop-filter: blur(7px);
+        .div-for-video{
+            width: 600px;
+            height: 450px;
+            border-radius: 13px;
+            video{
+                margin-top: 40px;
+                margin-left: 25px;
+                width: 100%;
+                border-radius: 13px;
+                
+            }
+        }
+        .div-txt{
+            width: 220px;
+            height: 90%;
+            border-radius: 30px;
+            
+            margin-top: 40px;
+            margin-left: 60px;
+         
+           
+            backdrop-filter: blur(7px);
+
+            button {
+                align-items: center;
+                background-color: transparent;
+                color: #fff;
+                cursor: pointer;
+                display: flex;
+                font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.5;
+                text-decoration: none;
+                text-transform: uppercase;
+                outline: 0;
+                border: 0;
+                padding: 1rem;
+              }
+              
+              button:before {
+                background-color: #fff;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                margin-right: 10px;
+                transition: all .42s cubic-bezier(.25,.8,.25,1);
+                width: 0;
+              }
+              
+              button:hover:before {
+                background-color: #fff;
+                width: 3rem;
+              }
+              
+              #info{
+                margin-left: 65px;
+                margin-bottom: 15px;
+              }
+        }
+        
+    }
+}
+
+.feedback{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    
+}
+
+.white{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fon-fon.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // backdrop-filter: blur(100px);
+    .trafic{
+        width: 80%;
+        height: 600px;
+        display: flex;
+        margin: auto;
+        background: rgba(255,255,255,.05);
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        backdrop-filter: blur(7px);
+        border-radius: 20px;
+
+
+        .divvv{
+            width: 90%;
+            height: 500px;
+            // background-color: aqua;
+            margin-left: 60px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+
+
+            .obs{
+                width: 340px;
+                height: 500px;
+                display: flex;
+                
+                justify-content: center;
+                background-color: #cccccc30;
+                backdrop-filter: blur(7px);
+                border-radius: 10px;
+                img{
+                    margin-top: 320px;
+                    margin-left: 20px;
+                }
+                #mecto{
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color: rgba(242, 255, 0, 0.573);
+                    backdrop-filter: blur(7px);
+                    border-radius: 10px;
+                    color: black;
+                    height: 40px;
+                    margin-right: 50px;
+                }
+                .tra1{
+                    width: 80px;
+                    height: 400px;
+                    background-color: #5b5ec763;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+                    backdrop-filter: blur(7px);
+                    display: flex;
+                    align-items: end;
+                    
+                    .tra2{
+                        width: 100%;
+                        height: 300px;
+                        background-color: #70b3ea;
+                    }
+                    
+                    .tra3{
+                        width: 100%;
+                        height: 340px;
+                       background-color: yellowgreen;
+                        backdrop-filter: blur(7px);
+                    }
+                    .tra4{
+                        width: 100%;
+                        height: 390px;
+                        background-color: #e9e34d;
+                    }
+                }
+                
+            }
+            
+        }
+        
+
+    }
+    
+}
+
+.own-div2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fon2.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+    
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.1fr 0.9fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr;
+  gap: 0px 0px;
+  background-color: aqua;
+  border: 1px solid black;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
